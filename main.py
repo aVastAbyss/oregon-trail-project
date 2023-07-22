@@ -29,7 +29,7 @@ def main():
     member_5 = {"name": "",
                 "health": 100}
 
-    party_list = [person_1, person_2, person_3, person_4, person_5]
+    party_list = [member_1, member_2, member_3, member_4, member_5]
 
     cash = select_difficulty()
     party_list = name_companions(party_list)
