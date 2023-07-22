@@ -1,3 +1,21 @@
+
+member_1 = {"name": "",
+                "health": 0}
+
+member_2 = {"name": "",
+                "health": 0}
+
+member_3 = {"name": "",
+                "health": 0}
+
+member_4 = {"name": "",
+                "health": 0}
+
+member_5 = {"name": "",
+                "health": 0}
+
+party_list = [member_1, member_2, member_3, member_4, member_5]
+
 def name_companions(party_list):
 
     print("1. \n2. \n3. \n4. \n5.")
@@ -12,6 +30,10 @@ def name_companions(party_list):
     print("1." + member_1["name"] + "\n2." + member_2["name"] + "\n3." + member_3["name"] + "\n4." + member_4["name"] + "\n5." + member_5["name"])
     member_5["name"] = input("what are the names of the other members of your party? ")
     print("1." + member_1["name"] + "\n2." + member_2["name"] + "\n3." + member_3["name"] + "\n4." + member_4["name"] + "\n5." + member_5["name"]) 
+
+    return party_list
+
+def confirm_names(updated_party_list):
 
     confirm_names = input("Are these names correct? \n (Y/N) ")
     
@@ -37,4 +59,8 @@ def name_companions(party_list):
             member_2["name"] = input("what is their name? ")
             print("1." + member_1["name"] + "\n2." + member_2["name"] + "\n3." + member_3["name"] + "\n4." + member_4["name"] + "\n5." + member_5["name"])
         
-name_companions(party_list)
+        confirm_names(updated_party_list)
+
+
+updated_party_list = name_companions(party_list)
+confirm_names(updated_party_list)
