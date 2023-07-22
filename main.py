@@ -28,6 +28,6 @@ def main():
     party_list = [person_1, person_2, person_3, person_4, person_5]
 
     cash = select_difficulty()
-    party_list = choose_names(party_list)
+    party_list = name_companions(party_list)
 
 main()
