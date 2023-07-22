@@ -10,7 +10,7 @@ def prompt_user():
 
     return user_action
 
-def enter_town(inventory, cash):
+def enter_town(inventory, cash, day):
 
     print("You have just arrived at a small town! What do you wish to do?")
 
@@ -26,7 +26,7 @@ def enter_town(inventory, cash):
 
         elif user_action == "3":
             distance_to_town = spawn_next_town()
-            return inventory, cash, distance_to_town
+            return inventory, cash, day, distance_to_town
     
         else:
             print("Invalid input. Try again")
