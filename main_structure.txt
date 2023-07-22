@@ -1,29 +1,29 @@
 Start:
-    select_difficulty()
-    choose_names()
+    select_difficulty()                        Flamgapper
+    choose_names()                             Skamayy
 
 Town/Fort:
-    buy_items()
-    spawn_next_fort()
-    leave_town()
+    buy_items()                                 Vast
+    spawn_next_fort()                           Vast
+    leave_town()                                Vast
 
 Trail:
-    show_stats()
-    get_trail_choice()
+    show_stats()                                Skamayy
+    get_trail_choice()                          Skamayy
     Depends on get_trail_choice():
 
-        continue_on_trail()
-        rest_on_trail()
-        change_pace()
-        change_rations()
+        continue_on_trail()                     Skamayy
+        rest_on_trail()                         Skamayy
+        change_pace()                           Skamayy
+        change_rations()                        Skamayy
 
-    Only runs occasionally:
-        spawn_river()
-        summon_medical_misfortune()
-        break_wagon()
-        change_weather()
-        change_grass_abundance()
+    Only runs occasionally:                
+        spawn_river()                           Flamgapper
+        summon_medical_misfortune()             Flamgapper
+        break_wagon()                           Flamgapper
+        change_weather()                        Flamgapper
+        change_grass_abundance()                Flamgapper
 
-    try_starve()
-    try_cholera()
-    try_exhaustion()
+    try_starve()                                Vast
+    try_cholera()                               Vast
+    try_exhaustion()                            Vast
