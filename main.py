@@ -3,6 +3,9 @@ import random
 
 def main():
 
+    current_trail_distance = 0
+    distance_to_town = 0
+
     cash = 0
     inventory = {"oxen": 0,
                  "food": 0,
@@ -29,5 +32,8 @@ def main():
 
     cash = select_difficulty()
     party_list = name_companions(party_list)
+
+    if distance_to_town == 0:
+        inventory, distance_to_town = enter_town(inventory)
 
 main()
