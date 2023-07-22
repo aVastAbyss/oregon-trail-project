@@ -1,13 +1,15 @@
 
+def name_companions():
+    player_name = input("What is the name of the party leader?")
+    member_1 = input("what are the names of the other members of your party?")
+    member_2 = input("what are the names of the other members of your party?")
+    member_3 = input("what are the names of the other members of your party?")
+    member_4 = input("what are the names of the other members of your party?")
+    
+    confirm_names = input("Are these names correct? \n (Y/N)")
+    
+    if confirm_names = "N" or confirm_names = "No":
+        change_name = input("Which name is incorrect?")
 
-player_name = input("What is the name of the party leader?")
-member_1 = input("what are the names of the other members of your party?")
-member_2 = input("what are the names of the other members of your party?")
-member_3 = input("what are the names of the other members of your party?")
-member_4 = input("what are the names of the other members of your party?")
 
-confirm_names = input("Are these names correct? \n (Y/N)")
-
-if confirm_names = "N" or confirm_names = "No":
-    change_name = input("Which name is incorrect?")
-
+name_companions()
