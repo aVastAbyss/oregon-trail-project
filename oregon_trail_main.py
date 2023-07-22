@@ -2,6 +2,6 @@ import os
 import random
 
 def main():
-
-AMONG US!!!
+	print("AMONG US!!!")
+	print("ORegon smells??")
 main()
