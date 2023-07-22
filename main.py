@@ -14,19 +14,19 @@ def main():
                  "spare parts": 0,
                  "medical supplies": 0}
 
-    person_1 = {"name": "",
+    member_1 = {"name": "",
                 "health": 100}
 
-    person_2 = {"name": "",
+    member_2 = {"name": "",
                 "health": 100}
 
-    person_3 = {"name": "",
+    member_3 = {"name": "",
                 "health": 100}
 
-    person_4 = {"name": "",
+    member_4 = {"name": "",
                 "health": 100}
 
-    person_5 = {"name": "",
+    member_5 = {"name": "",
                 "health": 100}
 
     party_list = [person_1, person_2, person_3, person_4, person_5]
