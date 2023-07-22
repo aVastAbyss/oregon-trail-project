@@ -1,0 +1,29 @@
+Start:
+    select_difficulty()
+    choose_names()
+
+Town/Fort:
+    buy_items()
+    spawn_next_fort()
+    leave_town()
+
+Trail:
+    show_stats()
+    get_trail_choice()
+    Depends on get_trail_choice():
+
+        continue_on_trail()
+        rest_on_trail()
+        change_pace()
+        change_rations()
+
+    Only runs occasionally:
+        spawn_river()
+        summon_medical_misfortune()
+        break_wagon()
+        change_weather()
+        change_grass_abundance()
+
+    try_starve()
+    try_cholera()
+    try_exhaustion()
