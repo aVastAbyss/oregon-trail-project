@@ -1,5 +1,5 @@
 def change_difficulty():
-    print("""Choose from one of the difficulties below:
+    difficulty_prompt = print("""Choose from one of the difficulties below:
     1. Easy
     2. Medium
     3. Hard
@@ -17,5 +17,7 @@ def change_difficulty():
                 cash = 1000
                 break
             case _:
+                os.system("clear")
+                print(difficulty_prompt)
                 user_choice = input("Please enter a valid number corresponding to one of the options above: ")
     return cash
