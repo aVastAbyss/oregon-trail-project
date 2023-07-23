@@ -36,14 +36,17 @@ def name_companions(party_list):
         if confirm_names == "N" or confirm_names == "n" or confirm_names == "No" or confirm_names == "no":
             change_name = input("Which name is incorrect? (1-5) ")
 
-            choices = {"1": input("What is the name of the party leader? "),
-                       "2": input("What are the names of the other members of your party? "),
-                       "3": input("What are the names of the other members of your party? "),
-                       "4": input("What are the names of the other members of your party? "),
-                       "5": input("What are the names of the other members of your party? ")}
+             choices = ["1", "2", "3", "4", "5"]
 
-            if choices = 
+            for choice in choices:
+                
+                if choice == change_name and change_name == "1":
+                    member_1["name"] = input("What is the name of the party leader? ")
+                    break
 
+                for member in party_list[1:]:
+                    if choice == change_name:
+                        member["name"] = input("What are the names of the other members of your party? ")
     print(party_list)
     return party_list
 
