@@ -10,6 +10,21 @@ def prompt_user():
 
     return user_action
 
+def rest(day):
+
+    while True:
+
+        days_to_rest = input("How many days do you want to rest? ")
+
+        valid_inputs_list = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+        for valid_input in valid_inputs_list:
+
+            if days_to_rest == valid_input:
+                return day + int(days_to_rest)
+
+        os.system("clear")
+        print("Invalid input. Enter an integer between 1 and 10.")
+
 def enter_town(inventory, cash, day):
 
     print("You have just arrived at a small town! What do you wish to do?")
@@ -22,13 +37,12 @@ def enter_town(inventory, cash, day):
             inventory, cash = buy_supplies(inventory, cash)
 
         elif user_action == "2":
-            
+            day = rest(day)
 
         elif user_action == "3":
-            distance_to_town = spawn_next_town()
+            distance_to_town = random.randint(100, 200)
             return inventory, cash, day, distance_to_town
-    
+
         else:
+            os.system("clear")
             print("Invalid input. Try again")
-    
-        
