@@ -22,10 +22,8 @@ def name_companions(party_list):
     changes_confirmed = False
     while changes_confirmed == False:
         
-        for member in party_list:
-            if member == member_1:
-                member["name"] = input("What is the name of the party leader? ")
-                print("1." + member_1["name"] + "\n2." + member_2["name"] + "\n3." + member_3["name"] + "\n4." + member_4["name"] + "\n5." + member_5["name"])
+        member_1["name"] = input("What is the name of the party leader? ")
+        print("1." + member_1["name"] + "\n2." + member_2["name"] + "\n3." + member_3["name"] + "\n4." + member_4["name"] + "\n5." + member_5["name"])
 
         for member in party_list[1:]:
             member["name"] = input("What are the names of the other members of your party? ")
