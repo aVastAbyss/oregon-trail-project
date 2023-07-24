@@ -13,7 +13,7 @@ Trail:
     Depends on get_trail_choice():
 
         continue_on_trail()                     Skamayy
-        rest_on_trail()                         Skamayy
+        rest_on_trail()
         change_pace()                           Skamayy
         change_rations()                        Skamayy
 
