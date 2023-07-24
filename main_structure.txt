@@ -1,6 +1,6 @@
 Start:
     select_difficulty()                        Flamgapper
-    choose_names()                             Skamayy
+    choose_names()                             Skamayy (ACTUALLY IMPOSSIBLE????)
 
 Town/Fort:
     buy_items()                                 Vast
