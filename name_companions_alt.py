@@ -20,9 +20,9 @@ def prompt_name_change(party_list):
     while True:
         name_index = input("Which name do you wish to change (1-5)? ")
 
-        valid_inputs_list = ["1", "2", "3", "4", "5"]
+        valid_inputs = ["1", "2", "3", "4", "5"]
 
-        if name_index in valid_inputs_list:
+        if name_index in valid_inputs:
             name_index = int(name_index) - 1
             break
 
