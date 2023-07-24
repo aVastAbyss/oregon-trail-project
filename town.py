@@ -3,34 +3,55 @@ import random
 
 def prompt_user():
 
-    print("1. Buy supplies")
-    print("2. Stop to rest")
-    print("3. Continue on the trail")
-    user_action = input("Enter the number associated with the action you wish to take: ")
+    while True:
+        print("1. Buy supplies")
+        print("2. Stop to rest")
+        print("3. Continue on the trail")
+        user_action = input("Select one of the above actions (1-3): ")
 
-    return user_action
+        return user_action
+
+def buy_supplies(inventory, cash):
+
+    costs = [250, 1, 1, 150, 25]
+    item_names = ["1 oxen", "1 lb of food", "1 gallon of water", "1 spare part", "1 health pack"]
+
+    while True:
+        print("Gerald The ShopKeeper: Welcome to my shop! What would you like to buy?")
+        print("1. Oxen")
+        print("2. Food")
+        print("3. Clean Water")
+        print("4. Spare Parts")
+        print("5. Medical Supplies")
+        item_index = input("Select one of the above items (1-5): ")
+
+        valid_inputs = ["1", "2", "3", "4", "5"]
+
+        if item_index in valid_inputs:
+            item_index = int(item_index)
+            break
+
+    print(item_names[item_index] + " costs $" + str(costs[item_index]))
+    amount = input("What amount do you wish to buy? ")
 
 def rest(day):
 
     while True:
+        days_to_rest = input("How many days do you want to rest (1-10)? ")
 
-        days_to_rest = input("How many days do you want to rest? ")
+        valid_inputs = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 
-        valid_inputs_list = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-        for valid_input in valid_inputs_list:
-
-            if days_to_rest == valid_input:
-                return day + int(days_to_rest)
+        if days_to_rest in valid_inputs:
+            return day + int(days_to_rest)
 
         os.system("clear")
-        print("Invalid input. Enter an integer between 1 and 10.")
+        print("Invalid input.")
 
 def enter_town(inventory, cash, day):
 
     print("You have just arrived at a small town! What do you wish to do?")
 
     while True:
-
         user_action = prompt_user()
 
         if user_action == "1":
@@ -45,4 +66,4 @@ def enter_town(inventory, cash, day):
 
         else:
             os.system("clear")
-            print("Invalid input. Try again")
+            print("Invalid input.")
