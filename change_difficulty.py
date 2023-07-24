@@ -1,9 +1,10 @@
 def change_difficulty():
-    difficulty_prompt = print("""Choose from one of the difficulties below:
-    1. Easy
-    2. Medium
-    3. Hard
-    """)
+    difficulty_prompt = """Choose who you are during the trail:
+    1. Banker
+    2. Farmer
+    3. Carpenter
+    """
+    print(difficulty_prompt)
     user_choice = input("Choose a number corresponding to one of the options above: ")
     while True:
         match user_choice:
